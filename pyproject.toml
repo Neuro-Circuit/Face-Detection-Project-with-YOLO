@@ -1,0 +1,23 @@
+[project]
+name = "projects-content"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Delora", email = "asarehsecondearth@gmail.com" }
+]
+requires-python = ">=3.14"
+dependencies = [
+    "insightface>=2.0",
+    "opencv-python>=5.0.0.93",
+    "torch>=2.14.0",
+    "torchvision>=0.29.0",
+    "ultralytics>=8.4.147",
+]
+
+[project.scripts]
+projects-content = "projects_content:main"
+
+[build-system]
+requires = ["uv_build>=0.12.13,<0.13.0"]
+build-backend = "uv_build"
