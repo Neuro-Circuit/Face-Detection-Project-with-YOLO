@@ -1,0 +1,127 @@
+**Main Project Structure**
+
+
+Projects Content/
+│
+├── .venv/
+├── Face images/
+│
+├── face_recognition_project/
+│   ├── .venv/
+│   ├── face_database.pkl
+│   ├── main.py
+│   │
+│   └── models/
+│       ├── yolov8m-face.pt
+│       └── yolov10m-face.pt
+│
+├── runs/
+├── src/
+│
+├── .gitignore
+├── .python-version
+├── pyproject.toml
+├── README.md
+└── uv.lock
+--------------------------------------------------------
+
+First, you need to open your project directory in VS Code. For example, on my computer, it is located at:
+
+C:\Users\Neurocircuit\Documents\Projects Content
+
+--------------------------------------------------------
+All these commands must be executed in the VS Code terminal.
+
+Okay, so you need to enter the directory in VS Code:
+
+cd "C:\Users\Neurocircuit\Documents\Projects Content"
+--------------------------------------------------------
+We activate the virtual environment:
+.venv\Scripts\Activate.ps1
+
+--------------------------------------------------------
+If it has been activated correctly, you will see something like this at the beginning of the terminal line:
+
+(.venv) PS C:\Users\Neurocircuit\Documents\Projects Content>
+--------------------------------------------------------
+Execute along the same main path:
+This command installs the dependencies defined in pyproject.toml in accordance with uv.lock.
+
+uv sync
+
+
+These are the required dependencies for the code we have:
+uv add opencv-python
+uv add pillow
+uv add numpy
+uv add ultralytics
+uv add insightface
+uv add onnxruntime
+--------------------------------------------------------
+Then, these instructions...
+
+uv lock
+uv sync
+
+--------------------------------------------------------
+Next, we need to enter the main directory.
+Well, this is my directory, and you should enter your own directory in this command.
+
+cd "C:\Users\Neurocircuit\Documents\Projects Content\face_recognition_project"
+
+---------------------------------------------------------
+Then, if you want to use the .venv from this same folder:
+
+.venv\Scripts\Activate.ps1
+
+--------------------------------------------------------
+and executing :
+
+uv run main.py
+-------------------------------------------------------
+Well, that’s it.
+
+If you run into any errors along the way, you can also get help from AI models.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
